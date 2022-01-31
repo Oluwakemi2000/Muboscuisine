@@ -23,12 +23,6 @@ function kay() {
             para.style.transform = 'translateY(0px)'
         })
     })
-}
-
-kay();
-
-
-function kay1() {
 
     let grid2 = document.getElementById('d2');
     let cook1 = document.getElementById('cook1');
@@ -52,12 +46,6 @@ function kay1() {
             para1.style.transform = 'translateY(0px)'
         })
     })
-}
-
-kay1();
-
-
-function kay2() {
 
     let grid3 = document.getElementById('d3');
     let cook2 = document.getElementById('cook2');
@@ -81,12 +69,6 @@ function kay2() {
             para2.style.transform = 'translateY(0px)'
         })
     })
-}
-
-kay2();
-
-
-function kay3() {
 
     let grid4 = document.getElementById('d4');
     let cook3 = document.getElementById('cook3');
@@ -110,13 +92,6 @@ function kay3() {
             para3.style.transform = 'translateY(0px)'
         })
     })
-}
-
-kay3();
-
-
-
-function kay4() {
 
     let grid5 = document.getElementById('d5');
     let cook4 = document.getElementById('cook4');
@@ -140,12 +115,6 @@ function kay4() {
             para4.style.transform = 'translateY(0px)'
         })
     })
-}
-
-kay4();
-
-
-function kay5() {
 
     let grid6 = document.getElementById('d6');
     let cook5 = document.getElementById('cook5');
@@ -171,7 +140,7 @@ function kay5() {
     })
 }
 
-kay5();
+kay();
 
 
 function h1() {
@@ -197,12 +166,6 @@ function h1() {
         })
     })
 
-}
-
-h1();
-
-
-function h2() {
     let food2 = document.getElementById('h2');
     let foodName2 = document.getElementById('h21');
     let foodDesc2 = document.getElementById('h22');
@@ -225,12 +188,6 @@ function h2() {
         })
     })
 
-}
-
-h2();
-
-
-function h3() {
     let food3 = document.getElementById('h3');
     let foodName3 = document.getElementById('h31');
     let foodDesc3 = document.getElementById('h32');
@@ -253,12 +210,6 @@ function h3() {
         })
     })
 
-}
-
-h3();
-
-
-function h4() {
     let food4 = document.getElementById('h4');
     let foodName4 = document.getElementById('h41');
     let foodDesc4 = document.getElementById('h42');
@@ -281,13 +232,6 @@ function h4() {
         })
     })
 
-}
-
-h4();
-
-
-
-function h5() {
     let food5 = document.getElementById('h5');
     let foodName5 = document.getElementById('h51');
     let foodDesc5 = document.getElementById('h52');
@@ -310,12 +254,6 @@ function h5() {
         })
     })
 
-}
-
-h5();
-
-
-function h6() {
     let food6 = document.getElementById('h6');
     let foodName6 = document.getElementById('h61');
     let foodDesc6 = document.getElementById('h62');
@@ -340,4 +278,7 @@ function h6() {
 
 }
 
-h6();
+h1();
+
+
+
