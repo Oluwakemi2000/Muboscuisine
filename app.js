@@ -281,3 +281,21 @@ function h1() {
 h1();
 
 
+
+function hamburgMenu() {
+    let menu = document.getElementById('menu1');
+    let navBar = document.getElementById('navbar');
+    let closeBar = document.getElementById('closeBar')
+
+    menu.addEventListener('click', () => {
+        navBar.style.left = '100%';
+        navBar.style.left = '0'
+    })
+
+    closeBar.addEventListener('click', () => {
+        navBar.style.left = '-100%'
+    })
+
+   
+}
+
