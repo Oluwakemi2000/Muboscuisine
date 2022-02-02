@@ -1278,7 +1278,7 @@ Media Queries
 
     .section7 {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: auto;
         grid-template-rows: repeat(6, 350px);
         text-align: center;
     }
