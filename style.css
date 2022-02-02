@@ -1288,6 +1288,7 @@ Media Queries
     }
     
     .section7 .h1 {
+        width: 100%;
         background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0, 0.4)),url(icecream.jpg);
         background-position: center;
         background-size: cover;
@@ -1339,6 +1340,7 @@ Media Queries
         cursor: pointer;
         padding: 100px 10px;
         text-align: center;
+        width: 100%;
     }
     
     .section7 .h3 {
@@ -1347,6 +1349,7 @@ Media Queries
         background-size: cover;
         cursor: pointer;
         padding: 100px 10px;
+        width: 100%;
     }
     
     .section7 .h4 {
@@ -1355,6 +1358,7 @@ Media Queries
         background-size: cover;
         cursor: pointer;
         padding: 100px 10px;
+        width: 100%;
     }
     
     .section7 .h5 {
@@ -1363,6 +1367,7 @@ Media Queries
         background-size: cover;
         cursor: pointer;
         padding: 100px 10px;
+        width: 100%;
     }
     
     .section7 .h6 {
@@ -1371,6 +1376,7 @@ Media Queries
         background-size: cover;
         cursor: pointer;
         padding: 100px 10px;
+        width: 100%;
     }
 
     .section8 {
