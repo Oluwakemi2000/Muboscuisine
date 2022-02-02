@@ -1104,7 +1104,11 @@ Media Queries
         margin-top: 20px;
     }
 
-    #d4 #cook3,
+    #d4 #cook3 {
+        margin-top: 0px;
+        font-family: 2.5rem;
+    }
+
     #d6 #cook5  {
         margin-top: 0px;
     }
