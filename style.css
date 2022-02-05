@@ -19,6 +19,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     animation: change 20s infinite ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 @keyframes change {
@@ -56,6 +57,8 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+
 }
 
 .menu {
@@ -155,8 +158,9 @@
     color: #fff;
     font-size: 4.5rem;
     font-family: 'Gentium Book Basic', serif;
+    font-family: 'Josefin Sans', sans-serif;
     display: block;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin: 0px 150px;
     text-align: center;
 }
@@ -222,132 +226,14 @@
     transform: translateX(500px);
 }
 
-.c .c12 p {
-    transform: translateY(80px);
-    font-size: 1.2rem;
-    line-height: 1.4;
-    color: rgba(0, 0, 0, 0.568);
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.c3 {
-    margin-block-start: 2.6rem;
-}
-
-.section3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 400px);
-    text-align: center;
-}
-
-.section3 .d1 {
-    background-color: #f84242;
-    background-image: linear-gradient(to top right, #f84242, #ffb573);
-    text-align: center;
-    align-items: center;
-    padding: 100px 50px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-
-#d1 #cook,
-#d2 #cook1 ,
-#d3 #cook2 {
-    color: #fff;
-    font-size: 2.5rem;
-    font-family: 'Oleo Script', cursive;
-    transform: translateY(0px);
-    transition: all 0.5s ease-in-out;
-    margin-top: 50px;
-}
-
-
-#d4 #cook3,
-#d5 #cook4,
-#d6 #cook5  {
-    color: #fff;
-    font-size: 2.5rem;
-    font-family: 'Oleo Script', cursive;
-    transform: translateY(0px);
-    transition: all 0.5s ease-in-out;
-    margin-top: 25px;
-}
-
-#d4 #cook3,
-#d6 #cook5  {
-    margin-top: 0px;
-}
-
-#d1 #para,
-#d2 #para1,
-#d3 #para2,
-#d4 #para3,
-#d5 #para4,
-#d6 #para5 {
-    color: #fff;
-    margin-block-start: 20px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
-    transform: translateY(10px);
-    transition: all 0.5s ease-in-out;
-    opacity: 0;
-}
-
-
-.section3 #d2 {
-    background-color: #36a7bc;
-    background-image: linear-gradient(to top right, #36a7bc, #43c3ab);
-    text-align: center;
-    align-items: center;
-    padding: 100px 50px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-
-.section3 #d3 {
-    background: linear-gradient(to top right, #ffb573, #fff779);
-    text-align: center;
-    align-items: center;
-    padding: 100px 50px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-
-.section3 .d4 {
-    background: linear-gradient(to top right, #00dacd, #31f4ad);
-    text-align: center;
-    align-items: center;
-    padding: 100px 50px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-
-.section3 .d5 {
-    background: linear-gradient(to top right, #c560ff, #8a66ff);
-    text-align: center;
-    align-items: center;
-    padding: 80px 50px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-
-.section3 .d6 {
-    background: linear-gradient(to top right, #00cdda, #6683ff);
-    text-align: center;
-    align-items: center;
-    padding: 100px 50px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-
 
 .section4 {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(99, 99, 99, 0.308) 70%, rgb(0, 0, 0)), url(icecream.jpg);
+    background: linear-gradient(to bottom, rgba(34, 34, 34, 0.712) 70%, rgb(0, 0, 0)), url(food1.jpg);
+    background: linear-gradient(to bottom, transparent 50%, rgb(0, 0, 0));
     background-size: cover;
-    background-position: top;
+    background-position: center;
     padding: 100px 250px;
 }
 
@@ -427,45 +313,66 @@
     padding: 100px 200px 150px 200px;
 }
 
-.section6 .g {
+.section6 .package {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 4rem;
     line-height: 1.3;
-    width: 30%;
+    width: 100%;
     margin-block-end: 2.5rem;
     color: #2e2e2e;
+    text-align: center;
+    position: relative;
 }
 
-.section6 .g1 {
-    font-family: 'Josefin Sans', sans-serif;
-    line-height: 1.2;
-    font-size: 1.3rem;
-    width: 60%;
-    margin-inline-start: auto;
-    color: #4e4e4e;
+.section6 .package::after {
+    position: absolute;
+    content: "\21CA";
+    height: 10px;
+    width: 10px;
+    left: 50%;
+    bottom: -20%;
+    animation: all 2s infinite ease-in-out;
+    transition: all 2s ease-in-out;
+    transform: translateY(20px);
 }
+
+@keyframes all {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+        transition: all 2s ease-in-out;
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(30px);
+        transition: all 2s ease-in-out;
+    }
+}
+
 
 .section7 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 400px);
     text-align: center;
+    margin: 50px 0px;
 }
 
 .section7 .h1 {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0, 0.4)),url(icecream.jpg);
     background-position: center;
     background-size: cover;
-    cursor: pointer;
     padding: 100px 50px;
 }
 
-.section7 .h1 a,
-.section7 .h2 a,
-.section7 .h3 a,
-.section7 .h4 a,
-.section7 .h5 a,
-.section7 .h6 a {
+.section7 .h1,
+.section7 .h2,
+.section7 .h3,
+.section7 .h4,
+.section7 .h5,
+.section7 .h6 {
     text-decoration: none;
     color: #fff;
 }
@@ -496,12 +403,56 @@
     opacity: 0;
 }
 
+.button71,
+.button72 {
+    padding: 6px 18px;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.button73 {
+    padding: 6px 18px;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    opacity: 0;
+}
+
+.button74, 
+.button75,
+.button76 {
+    padding: 6px 18px;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    opacity: 0;
+}
+
 
 .section7 .h2 {
     background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.5)), url(snacks.jpg);
     background-position: center;
     background-size: cover;
-    cursor: pointer;
     padding: 100px 50px;
 }
 
@@ -509,7 +460,6 @@
     background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.5)), url(cake4.jpg);
     background-position: center;
     background-size: cover;
-    cursor: pointer;
     padding: 100px 50px;
 }
 
@@ -517,16 +467,14 @@
     background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.5)), url(chineserice.jpg);
     background-position: center;
     background-size: cover;
-    cursor: pointer;
-    padding: 100px 50px;
+    padding: 80px 50px;
 }
 
 .section7 .h5 {
     background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.5)), url(chinese-rice.jpg);
     background-position: center;
     background-size: cover;
-    cursor: pointer;
-    padding: 100px 50px;
+    padding: 80px 50px;
 }
 
 
@@ -534,8 +482,7 @@
     background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.5)), url(bbq.jpg);
     background-position: center;
     background-size: cover;
-    cursor: pointer;
-    padding: 100px 50px;
+    padding: 80px 50px;
 }
 
 
@@ -565,7 +512,7 @@
 
 .location iframe {
     width: 70%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -664,6 +611,37 @@ form .mail {
 }
 
 .mail #mail:hover {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    border-radius: 2px;
+}
+
+form .date {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.date label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.date #date {
+    padding: 8px;
+    width: 100%;
+    margin-block-end: 20px;
+}
+
+.date #date:focus {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.date #date:hover {
     padding: 8px;
     border: 1px solid rgba(0, 0, 0, 0.63);
     border-radius: 2px;
@@ -938,7 +916,7 @@ Media Queries
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
-        margin: 100px 0px;
+        margin: 60px 0px;
         text-align: center;
     }
     
@@ -1064,115 +1042,6 @@ Media Queries
         margin-block-start: 2.9rem;
     }
 
-    .section3 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 350px);
-        text-align: center;
-    }
-    
-    .section3 .d1 {
-        background-color: #f84242;
-        background-image: linear-gradient(to top right, #f84242, #ffb573);
-        text-align: center;
-        align-items: center;
-        padding: 70px 50px;
-        transition: all 0.5s ease;
-        cursor: pointer;
-    }
-
-    #d1 #cook,
-    #d2 #cook1,
-    #d3 #cook2 {
-        color: #fff;
-        font-size: 2.8rem;
-        font-family: 'Oleo Script', cursive;
-        transform: translateY(0px);
-        transition: all 0.5s ease-in-out;
-        margin-top: 50px;
-    }
-
-
-    #d4 #cook3,
-    #d5 #cook4,
-    #d6 #cook5  {
-        color: #fff;
-        font-size: 2.8rem;
-        font-family: 'Oleo Script', cursive;
-        transform: translateY(0px);
-        transition: all 0.5s ease-in-out;
-        margin-top: 20px;
-    }
-
-    #d4 #cook3 {
-        margin-top: 0px;
-        font-family: 2.5rem;
-    }
-
-    #d6 #cook5  {
-        margin-top: 0px;
-    }
-
-    #d1 #para,
-    #d2 #para1,
-    #d3 #para2,
-    #d4 #para3,
-    #d5 #para4,
-    #d6 #para5 {
-        color: #fff;
-        margin-block-start: 20px;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 1rem;
-        transform: translateY(10px);
-        transition: all 0.5s ease-in-out;
-        opacity: 0;
-    }
-
-    .section3 #d2 {
-        background-color: #36a7bc;
-        background-image: linear-gradient(to top right, #36a7bc, #43c3ab);
-        text-align: center;
-        align-items: center;
-        padding: 70px 50px;
-        transition: all 0.5s ease;
-        cursor: pointer;
-    }
-    
-    .section3 #d3 {
-        background: linear-gradient(to top right, #ffb573, #fff779);
-        text-align: center;
-        align-items: center;
-        padding: 50px 50px;
-        transition: all 0.5s ease;
-        cursor: pointer;
-    }
-    
-    .section3 .d4 {
-        background: linear-gradient(to top right, #00dacd, #31f4ad);
-        text-align: center;
-        align-items: center;
-        padding: 80px 50px;
-        transition: all 0.5s ease;
-        cursor: pointer;
-    }
-    
-    .section3 .d5 {
-        background: linear-gradient(to top right, #c560ff, #8a66ff);
-        text-align: center;
-        align-items: center;
-        padding: 70px 50px;
-        transition: all 0.5s ease;
-        cursor: pointer;
-    }
-    
-    .section3 .d6 {
-        background: linear-gradient(to top right, #00cdda, #6683ff);
-        text-align: center;
-        align-items: center;
-        padding: 100px 50px;
-        transition: all 0.5s ease;
-        cursor: pointer;
-    }
 
     .section4 {
         width: 100%;
@@ -1219,7 +1088,7 @@ Media Queries
         line-height: 1.3;
         width: 100%;
         margin-block-end: 2.4rem;
-        text-align: center;
+        text-align: left;
     }
     
     .section5 .f1 {
@@ -1258,32 +1127,54 @@ Media Queries
     }
 
     .section6 {
-        padding: 100px 10px 100px 10px;
+        padding: 50px 10px 50px 10px;
         text-align: center;
     }
     
-    .section6 .g {
+    .section6 .package {
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 3.4rem;
+        font-size: 2.4rem;
         line-height: 1.3;
         width: 100%;
         margin-block-end: 2.5rem;
         color: #2e2e2e;
     }
-    
-    .section6 .g1 {
-        font-family: 'Josefin Sans', sans-serif;
-        line-height: 1.3;
-        font-size: 1.4rem;
-        width: 100%;
-        margin: auto;
-        color: #4e4e4e;
+
+    .section6 .package::after {
+        position: absolute;
+        content: "\21CA";
+        height: 10px;
+        width: 10px;
+        left: 45%;
+        bottom: -20%;
+        animation: all 2s infinite ease-in-out;
+        transition: all 2s ease-in-out;
+        transform: translateY(20px);
     }
+    
+    @keyframes all {
+        0% {
+            opacity: 0;
+            transform: translateY(0px);
+            transition: all 2s ease-in-out;
+        }
+    
+    
+        100% {
+            opacity: 1;
+            transform: translateY(20px);
+            transition: all 2s ease-in-out;
+        }
+    }
+    
+    
 
     .section7 {
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(6, 350px);
+        grid-template-columns: 450px;
+        grid-template-rows: repeat(6, 400px);
+        justify-content: center;
+        gap: 1rem;
         text-align: center;
     }
     
@@ -1296,7 +1187,7 @@ Media Queries
         padding: 100px 10px;
     }
 
-    .section7 .h1 a,
+    .section7 .h1,
     .section7 .h2 a,
     .section7 .h3 a,
     .section7 .h4 a,
@@ -1317,6 +1208,7 @@ Media Queries
         margin: 0px 0px 10px 0;
         transform: translateY(40px);
         transition: all 0.6s ease-in-out;
+        color: #fff;
     }
 
     .h12,
@@ -1389,6 +1281,7 @@ Media Queries
         color: rgba(0, 0, 0, 0.781);
         line-height: 1.3;
         margin-block-end: 50px;
+        text-align: center;
     }
     
     .section8 .contacts {
@@ -1400,7 +1293,7 @@ Media Queries
 
     .contacts .location {
         width: 100%;
-        height: 400px;
+        height: 350px;
         margin-bottom: 30px;
     }
     
@@ -1505,6 +1398,37 @@ Media Queries
     }
     
     .mail #mail:hover {
+        padding: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.63);
+        border-radius: 2px;
+    }
+
+    form .date {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .date label {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        color: rgba(0, 0, 0, 0.753);
+    }
+
+    .date #date {
+        padding: 8px;
+        width: 100%;
+        margin-block-end: 20px;
+    }
+    
+    .date #date:focus {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    .date #date:hover {
         padding: 8px;
         border: 1px solid rgba(0, 0, 0, 0.63);
         border-radius: 2px;
