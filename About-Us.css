@@ -1,0 +1,1150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.menu {
+    width: 40px;
+    height: 40px;
+    background-color: #f84242;
+    display: none;
+}
+
+.menu1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.closeBar {
+    width: 40px;
+    height: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+.head.container {
+    padding: 15px 50px;
+    background-color: transparent;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 1.15rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #DFE0DF;
+    position: relative;
+}
+
+.navbar .active {
+    color: #E07420;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #E07420;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.6s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 20vh;
+}
+
+.section1 .a {
+    color: #fff;
+    font-size: 4.5rem;
+    font-family: 'Gentium Book Basic', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+    text-transform: capitalize;
+    margin: 0px 150px;
+    text-align: center;
+}
+
+
+
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0px;
+    padding: 0px 100px;
+}
+
+.section3 .d1 {
+    background-color: #f84242;
+    background-image: linear-gradient(to top right, #f84242, #ffb573);
+    text-align: center;
+    align-items: center;
+    padding: 100px 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 30px 0px 0px 0px;
+}
+
+#d1 #cook,
+#d2 #cook1 ,
+#d3 #cook2 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Oleo Script', cursive;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+    margin-top: 50px;
+}
+
+
+#d4 #cook3,
+#d5 #cook4,
+#d6 #cook5  {
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Oleo Script', cursive;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+    margin-top: 25px;
+}
+
+#d4 #cook3 {
+    margin: 15px 0;
+}
+#d6 #cook5  {
+    margin-top: 0px;
+}
+
+#d1 #para,
+#d2 #para1,
+#d3 #para2,
+#d4 #para3,
+#d5 #para4,
+#d6 #para5 {
+    color: #fff;
+    margin-block-start: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    transform: translateY(10px);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+
+.section3 #d2 {
+    background-color: #36a7bc;
+    background-image: linear-gradient(to top right, #36a7bc, #43c3ab);
+    text-align: center;
+    align-items: center;
+    padding: 100px 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 0px 30px 0px 0px;
+}
+
+.section3 #d3 {
+    background: linear-gradient(to top right, #ffb573, #fff779);
+    text-align: center;
+    align-items: center;
+    padding: 100px 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.section3 .d4 {
+    background: linear-gradient(to top right, #00dacd, #31f4ad);
+    text-align: center;
+    align-items: center;
+    padding: 100px 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.section3 .d5 {
+    background: linear-gradient(to top right, #c560ff, #8a66ff);
+    text-align: center;
+    align-items: center;
+    padding: 80px 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 0px 0px 0px 30px;
+}
+
+.section3 .d6 {
+    background: linear-gradient(to top right, #00cdda, #6683ff);
+    text-align: center;
+    align-items: center;
+    padding: 100px 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 0px 0px 30px 0px;
+}
+
+
+
+.section6 {
+    padding: 100px 200px 150px 200px;
+}
+
+.section6 .g {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    line-height: 1.3;
+    width: 30%;
+    margin-block-end: 2.5rem;
+    color: #2e2e2e;
+}
+
+.section6 .g1 {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.2;
+    font-size: 1.3rem;
+    width: 60%;
+    margin-inline-start: auto;
+    color: #4e4e4e;
+}
+
+
+.section8 {
+    padding: 100px 200px 150px 200px;
+}
+
+.section8 .contact {
+    font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.781);
+    line-height: 1.3;
+    margin-block-end: 50px;
+}
+
+.section8 .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.contacts .location {
+    width: 100%;
+    height: 100%;
+}
+
+.location iframe {
+    width: 70%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.contacts .form {
+    width: 50%;
+    height: 100%;
+}
+
+form .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.name label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.name #fullName {
+    padding: 8px;
+    width: 100%;
+    margin-block-end: 20px;
+}
+
+.name #fullName:focus {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.name #fullName:hover {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    border-radius: 2px;
+}
+
+form .phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.phone label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.phone #phone {
+    padding: 8px;
+    width: 100%;
+    margin-block-end: 20px;
+}
+
+.phone #phone:focus {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.phone #phone:hover {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    border-radius: 2px;
+}
+
+form .mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.mail label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.mail #mail {
+    padding: 8px;
+    width: 100%;
+    margin-block-end: 20px;
+}
+
+.mail #mail:focus {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.mail #mail:hover {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    border-radius: 2px;
+}
+
+form .date {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.date label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.date #date {
+    padding: 8px;
+    width: 100%;
+    margin-block-end: 20px;
+}
+
+.date #date:focus {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.date #date:hover {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    border-radius: 2px;
+}
+
+form .message {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.message label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.message #message {
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    margin-block-end: 40px;
+}
+
+.message #message:focus {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.message #message:hover {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    border-radius: 2px;
+}
+
+a .button-form {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    padding: 7px 30px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 2px 5px 10px rgba(66, 63, 63, 0.61);
+}
+
+
+a .button-form:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+.foot {
+    padding: 50px 100px 10px 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+.foot .det {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    margin-block-end: 20px;
+}
+
+
+.foot .privacy {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.575);
+    margin-bottom: 20px;
+}
+
+
+.foot .privacy a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.4;
+    position: relative;
+}
+
+
+.foot .privacy a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.foot .privacy a:hover::after {
+    width: 100%;
+}
+
+.foot .dev {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: end;
+}
+
+.foot .dev a {
+    text-decoration: none;
+    color: #f84242;
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.foot .dev a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f84242;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.foot .dev a:hover:after {
+    width: 100%;
+}
+
+
+/*********
+
+Media Queries
+
+*********/
+
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .header {
+        position: relative;
+        height: 60vh;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event5.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .menu {
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        background-color: #f84242;
+        display: block;
+        position: absolute;
+        top: 1.3rem;
+        right: 1rem;
+    }
+
+    .closeBar {
+        width: 40px;
+        height: 40px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 1.4rem;
+        right: 1rem;
+    }
+
+    .head.container {
+        padding: 15px 15px;
+        background-color: transparent;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #00765F;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        display: block;
+        transition: all 0.5s ease-in-out;
+        z-index: 1;
+    }
+    
+    .navbar li {
+        list-style: none;
+        font-size: 1.3rem;
+        line-height: 1.2;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        margin: 60px 0px;
+        text-align: center;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: #DFE0DF;
+        position: relative;
+    }
+    
+    .navbar .active {
+        color: #E07420;
+    }
+    
+    .navbar a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        background: #E07420;
+        left: 0;
+        bottom: -5px;
+        transition: all 0.6s ease;
+    }
+    
+    .navbar a:hover::after {
+        width: 100%;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-block-start: 20vh;
+    }
+    
+    .section1 .a {
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: 'Gentium Book Basic', serif;
+        display: block;
+        text-transform: uppercase;
+        margin: 0px 100px;
+        text-align: center;
+    }
+
+
+    .section3 {
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: repeat(6, 350px);
+        text-align: center;
+    }
+    
+    .section3 .d1 {
+        background-color: #f84242;
+        background-image: linear-gradient(to top right, #f84242, #ffb573);
+        text-align: center;
+        align-items: center;
+        padding: 70px 50px;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    #d1 #cook,
+    #d2 #cook1,
+    #d3 #cook2 {
+        color: #fff;
+        font-size: 2.8rem;
+        font-family: 'Oleo Script', cursive;
+        transform: translateY(0px);
+        transition: all 0.5s ease-in-out;
+        margin-top: 50px;
+    }
+
+
+    #d4 #cook3,
+    #d5 #cook4,
+    #d6 #cook5  {
+        color: #fff;
+        font-size: 2.8rem;
+        font-family: 'Oleo Script', cursive;
+        transform: translateY(0px);
+        transition: all 0.5s ease-in-out;
+        margin-top: 20px;
+    }
+
+    #d4 #cook3 {
+        margin-top: 0px;
+        font-family: 2.5rem;
+    }
+
+    #d6 #cook5  {
+        margin-top: 0px;
+    }
+
+    #d1 #para,
+    #d2 #para1,
+    #d3 #para2,
+    #d4 #para3,
+    #d5 #para4,
+    #d6 #para5 {
+        color: #fff;
+        margin-block-start: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1rem;
+        transform: translateY(10px);
+        transition: all 0.5s ease-in-out;
+        opacity: 0;
+    }
+
+    .section3 #d2 {
+        background-color: #36a7bc;
+        background-image: linear-gradient(to top right, #36a7bc, #43c3ab);
+        text-align: center;
+        align-items: center;
+        padding: 70px 50px;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        border-radius: 0px;
+    }
+    
+    .section3 #d3 {
+        background: linear-gradient(to top right, #ffb573, #fff779);
+        text-align: center;
+        align-items: center;
+        padding: 50px 50px;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+    
+    .section3 .d4 {
+        background: linear-gradient(to top right, #00dacd, #31f4ad);
+        text-align: center;
+        align-items: center;
+        padding: 80px 50px;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+    
+    .section3 .d5 {
+        background: linear-gradient(to top right, #c560ff, #8a66ff);
+        text-align: center;
+        align-items: center;
+        padding: 70px 50px;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        border-radius: 0px;
+    }
+    
+    .section3 .d6 {
+        background: linear-gradient(to top right, #00cdda, #6683ff);
+        text-align: center;
+        align-items: center;
+        padding: 100px 50px;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    
+    
+    .section6 {
+        padding: 100px 10px 100px 10px;
+        text-align: center;
+    }
+    
+    .section6 .g {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 3.4rem;
+        line-height: 1.3;
+        width: 100%;
+        margin-block-end: 2.5rem;
+        color: #2e2e2e;
+    }
+    
+    .section6 .g1 {
+        font-family: 'Josefin Sans', sans-serif;
+        line-height: 1.3;
+        font-size: 1.4rem;
+        width: 100%;
+        margin: auto;
+        color: #4e4e4e;
+    }
+
+    .section8 {
+        padding: 100px 10px 150px 10px;
+    }
+    
+    .section8 .contact {
+        font-size: 3rem;
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgba(0, 0, 0, 0.781);
+        line-height: 1.3;
+        margin-block-end: 50px;
+    }
+    
+    .section8 .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .contacts .location {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    
+    .location iframe {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .contacts .form {
+        width: 100%;
+        height: 100%;
+    }
+
+    form .name {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .name label {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    .name #fullName {
+        padding: 8px;
+        width: 100%;
+        margin-block-end: 20px;
+    }
+
+    .name #fullName:focus {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    .name #fullName:hover {
+        padding: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.63);
+        border-radius: 2px;
+    }
+    
+    form .phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .phone label {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    .phone #phone {
+        padding: 8px;
+        width: 100%;
+        margin-block-end: 20px;
+    }
+    
+    .phone #phone:focus {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    .phone #phone:hover {
+        padding: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.63);
+        border-radius: 2px;
+    }
+    
+    form .mail {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .mail label {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    .mail #mail {
+        padding: 8px;
+        width: 100%;
+        margin-block-end: 20px;
+    }
+    
+    .mail #mail:focus {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    .mail #mail:hover {
+        padding: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.63);
+        border-radius: 2px;
+    }
+
+    form .date {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .date label {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        color: rgba(0, 0, 0, 0.753);
+    }
+
+    .date #date {
+        padding: 8px;
+        width: 100%;
+        margin-block-end: 20px;
+    }
+    
+    .date #date:focus {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    .date #date:hover {
+        padding: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.63);
+        border-radius: 2px;
+    }
+    
+    form .message {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .message label {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    .message #message {
+        padding: 10px;
+        height: 100px;
+        width: 100%;
+        margin-block-end: 40px;
+    }
+    
+    .message #message:focus {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    .message #message:hover {
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.63);
+        border-radius: 2px;
+    }
+    
+    a .button-form {
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        position: absolute;
+        left: 35%;
+        padding: 10px 30px;
+        background-color: #000;
+        color: #fff;
+        border: 1px solid #000;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 2px 5px 10px rgba(66, 63, 63, 0.61);
+    }
+    
+    
+    a .button-form:hover {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+    
+    
+    .foot {
+        padding: 30px 10px;
+        background-color: #000;
+        color: #fff;
+    }
+    
+    .foot .det {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        line-height: 1.3;
+        text-align: center;
+        margin-block-end: 20px;
+    }
+    
+    
+    .foot .privacy {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        line-height: 1.4;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.575);
+    }
+    
+    .foot .privacy a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.4;
+        position: relative;
+    }
+    
+    
+    .foot .privacy a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .foot .privacy a:hover::after {
+        width: 100%;
+    }
+
+    .foot .dev {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .foot .dev a {
+        text-decoration: none;
+        color: #f84242;
+        font-weight: 500;
+        font-size: 1.4rem;
+        position: relative;
+        display: block;
+    }
+    
+    .foot .dev a::after {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: #f84242;
+        left: 0;
+        bottom: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .foot .dev a:hover:after {
+        width: 100%;
+    }
+}
