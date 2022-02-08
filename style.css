@@ -18,12 +18,12 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: change 10s infinite ease-in-out;
+    animation: change 20s infinite ease-in-out;
     animation-iteration-count: infinite;
 }
 
 @keyframes change {
-    20% {
+    0% {
         background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event5.jpg);
         background-position: center;
         background-size: cover;
@@ -31,7 +31,7 @@
         animation-iteration-count: infinite;
     }
 
-    40% {
+    25% {
         background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event2.jpg);
         background-position: center;
         background-size: cover;
@@ -39,7 +39,7 @@
         animation-iteration-count: infinite;
     }
 
-    60% {
+    50% {
         background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event4.jpg);
         background-position: center;
         background-size: cover;
@@ -47,7 +47,7 @@
         animation-iteration-count: infinite;
     }
 
-    80% {
+    75% {
         background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event3.jpg);
         background-position: center;
         background-size: cover;
@@ -814,7 +814,7 @@ Media Queries
         background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event5.jpg);
         background-position: center;
         background-size: cover;
-        animation: change 10s infinite ease-in-out;
+        animation: change 20s infinite ease-in-out;
         animation-iteration-count: infinite;
         animation-delay: 0ms;
     }
@@ -1624,7 +1624,7 @@ Portrait Tablet
     }
 
     @keyframes change {
-        20% {
+        0% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event5.jpg);
             background-position: center;
             background-size: cover;
@@ -1632,7 +1632,7 @@ Portrait Tablet
             animation-iteration-count: infinite;
         }
     
-        40% {
+        25% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event2.jpg);
             background-position: center;
             background-size: cover;
@@ -1640,7 +1640,7 @@ Portrait Tablet
             animation-iteration-count: infinite;
         }
     
-        60% {
+        50% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event4.jpg);
             background-position: center;
             background-size: cover;
@@ -1648,7 +1648,7 @@ Portrait Tablet
             animation-iteration-count: infinite;
         }
     
-        80% {
+        75% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event3.jpg);
             background-position: center;
             background-size: cover;
@@ -2413,12 +2413,12 @@ Landscape Tablet
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        animation: change 10s infinite ease-in-out;
+        animation: change 20s infinite ease-in-out;
         animation-iteration-count: infinite;
     }
     
     @keyframes change {
-        20% {
+        0% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event5.jpg);
             background-position: center;
             background-size: cover;
@@ -2426,7 +2426,7 @@ Landscape Tablet
             animation-iteration-count: infinite;
         }
     
-        40% {
+        25% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event2.jpg);
             background-position: center;
             background-size: cover;
@@ -2434,7 +2434,7 @@ Landscape Tablet
             animation-iteration-count: infinite;
         }
     
-        60% {
+        50% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event4.jpg);
             background-position: center;
             background-size: cover;
@@ -2442,7 +2442,7 @@ Landscape Tablet
             animation-iteration-count: infinite;
         }
     
-        80% {
+        75% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event3.jpg);
             background-position: center;
             background-size: cover;
@@ -3213,12 +3213,12 @@ Laptop with HiDPI Screen
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        animation: change 10s infinite ease-in-out;
+        animation: change 20s infinite ease-in-out;
         animation-iteration-count: infinite;
     }
 
     @keyframes change {
-        20% {
+        0% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event5.jpg);
             background-position: center;
             background-size: cover;
@@ -3226,7 +3226,7 @@ Laptop with HiDPI Screen
             animation-iteration-count: infinite;
         }
 
-        40% {
+        25% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event2.jpg);
             background-position: center;
             background-size: cover;
@@ -3234,7 +3234,7 @@ Laptop with HiDPI Screen
             animation-iteration-count: infinite;
         }
 
-        60% {
+        50% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event4.jpg);
             background-position: center;
             background-size: cover;
@@ -3242,7 +3242,7 @@ Laptop with HiDPI Screen
             animation-iteration-count: infinite;
         }
 
-        80% {
+        75% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event3.jpg);
             background-position: center;
             background-size: cover;
@@ -4019,12 +4019,12 @@ Big Screen
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        animation: change 10s infinite ease-in-out;
+        animation: change 20s infinite ease-in-out;
         animation-iteration-count: infinite;
     }
     
     @keyframes change {
-        20% {
+        0% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event5.jpg);
             background-position: center;
             background-size: cover;
@@ -4032,7 +4032,7 @@ Big Screen
             animation-iteration-count: infinite;
         }
     
-        40% {
+        25% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event2.jpg);
             background-position: center;
             background-size: cover;
@@ -4040,7 +4040,7 @@ Big Screen
             animation-iteration-count: infinite;
         }
     
-        60% {
+        50% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event4.jpg);
             background-position: center;
             background-size: cover;
@@ -4048,7 +4048,7 @@ Big Screen
             animation-iteration-count: infinite;
         }
     
-        80% {
+        75% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event3.jpg);
             background-position: center;
             background-size: cover;
