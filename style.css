@@ -820,7 +820,7 @@ Media Queries
     }
 
     @keyframes change {
-        20% {
+        0% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event5.jpg);
             background-position: center;
             background-size: cover;
@@ -829,7 +829,7 @@ Media Queries
             animation-delay: 0ms;
         }
     
-        40% {
+        25% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event2.jpg);
             background-position: center;
             background-size: cover;
@@ -838,7 +838,7 @@ Media Queries
             animation-delay: 0ms;
         }
     
-        60% {
+        50% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event4.jpg);
             background-position: center;
             background-size: cover;
@@ -847,7 +847,7 @@ Media Queries
             animation-delay: 0ms;
         }
     
-        80% {
+        75% {
             background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event3.jpg);
             background-position: center;
             background-size: cover;
