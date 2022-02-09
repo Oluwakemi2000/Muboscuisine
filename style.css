@@ -875,7 +875,7 @@ Media Queries
         position: absolute;
         top: 1.3rem;
         right: 1rem;
-        border-radius: 2px;
+        border-radius: 5px;
     }
 
     .closeBar {
@@ -968,7 +968,7 @@ Media Queries
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         margin-block-start: 20vh;
     }
     
@@ -977,19 +977,20 @@ Media Queries
         font-size: 2.5rem;
         font-family: 'Gentium Book Basic', serif;
         display: block;
-        text-transform: uppercase;
-        margin: 0px 100px;
-        text-align: center;
+        text-transform: capitalize;
+        margin: 0px 0px 0 10px;
+        text-align: left;
     }
     
     .section1 .b {
         color: #fff;
         font-family: 'Gentium Book Basic', serif;
         font-size: 1.5rem;
-        margin: 2rem 0rem 5rem 0;
+        margin: 2rem 0rem 4rem 0;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
-        text-align: center;
+        text-align: left;
+        padding: 0 0 0 10px;
     }
 
     .section1 .button1 {
@@ -1005,6 +1006,7 @@ Media Queries
         cursor: pointer;
         transition: all 0.5s ease;
         font-family: 'Josefin Sans', sans-serif;
+        margin: 0 0 0 10px;
     }
     
     .section1 .button1:hover {
@@ -1018,7 +1020,7 @@ Media Queries
     }
     
     .section2 {
-        padding: 100px 5px 130px 5px;
+        padding: 100px 0px 130px 10px;
     }
     
     .c {
@@ -1026,7 +1028,7 @@ Media Queries
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        text-align: center;
+        text-align: left;
     }
     
     .c .c1 {
@@ -1188,7 +1190,6 @@ Media Queries
     }
     
     
-
     .section7 {
         display: grid;
         grid-template-columns: 93vw;
@@ -1301,7 +1302,7 @@ Media Queries
         color: rgba(0, 0, 0, 0.781);
         line-height: 1.3;
         margin-block-end: 50px;
-        text-align: center;
+        text-align: left;
     }
     
     .section8 .contacts {
@@ -1565,7 +1566,7 @@ Media Queries
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 300;
         font-size: 1.2rem;
-        text-align: center;
+        text-align: right;
     }
     
     .foot .dev a {
@@ -1768,7 +1769,7 @@ Portrait Tablet
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         margin-block-start: 20vh;
     }
     
@@ -1779,19 +1780,19 @@ Portrait Tablet
         display: block;
         line-height: 1.3;
         font-weight: 600;
-        text-transform: uppercase;
-        margin: 0px 80px;
-        text-align: center;
+        text-transform: capitalize;
+        margin: 0px 0px 0px 20px;
+        text-align: left;
     }
     
     .section1 .b {
         color: #fff;
         font-family: 'Gentium Book Basic', serif;
         font-size: 1.7rem;
-        margin: 2rem 0rem 5rem 0;
+        margin: 2rem 0rem 5rem 20px;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
-        text-align: center;
+        text-align: left;
     }
 
     .section1 .button1 {
@@ -1808,6 +1809,7 @@ Portrait Tablet
         cursor: pointer;
         transition: all 0.5s ease;
         font-family: 'Josefin Sans', sans-serif;
+        margin: 0 0 0 20px;
     }
     
     .section1 .button1:hover {
@@ -1824,8 +1826,8 @@ Portrait Tablet
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
     }
     
     .c .c1 {
@@ -1877,7 +1879,7 @@ Portrait Tablet
         font-family: 'Josefin Sans', sans-serif;
         margin-block-end: 40px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         line-height: 1.5;
     }
@@ -1892,7 +1894,7 @@ Portrait Tablet
         font-family: 'Josefin Sans', sans-serif;
         font-size: 1.5rem;
         line-height: 1.3;
-        text-align: center;
+        text-align: left;
         color: rgb(66, 63, 63);
     }
     
@@ -2104,7 +2106,7 @@ Portrait Tablet
         color: rgba(0, 0, 0, 0.781);
         line-height: 1.5;
         margin-block-end: 50px;
-        text-align: center;
+        text-align: left;
     }
     
     .section8 .contacts {
