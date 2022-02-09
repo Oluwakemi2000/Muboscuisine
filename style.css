@@ -1616,6 +1616,7 @@ Portrait Tablet
         position: relative;
         height: 100vh;
         width: 100%;
+        overflow: hidden;
         background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.45)), url(event5.jpg);
         background-position: center;
         background-size: cover;
@@ -2043,7 +2044,7 @@ Portrait Tablet
         transform: translateY(0px);
         transition: all 0.6s ease-in-out;
         opacity: 0;
-        padding: 0px 10px;
+        padding: 0px 20px;
     }
 
 
@@ -2094,7 +2095,7 @@ Portrait Tablet
     }
 
     .section8 {
-        padding: 100px 10px 150px 10px;
+        padding: 100px 20px 150px 20px;
     }
     
     .section8 .contact {
@@ -2273,7 +2274,7 @@ Portrait Tablet
     }
     
     .message #message {
-        padding: 10px;
+        padding: 12px;
         height: 120px;
         width: 100%;
         margin-block-end: 40px;
@@ -2398,11 +2399,11 @@ Portrait Tablet
 }
 
 
-/* 
+/*************
 
 Landscape Tablet
 
-*/
+************/
 
 @media only screen and (min-width: 900.2px) and (max-width: 1200px) {
     .header {
@@ -2916,7 +2917,7 @@ Landscape Tablet
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        gap: 2rem;
+        gap: 1rem;
     }
     
     .contacts .location {
@@ -3088,7 +3089,7 @@ Landscape Tablet
     }
     
     .message #message:hover {
-        padding: 12wpx;
+        padding: 12px;
         border: 1px solid rgba(0, 0, 0, 0.63);
         border-radius: 2px;
     }
@@ -4004,11 +4005,11 @@ Laptop with HiDPI Screen
 }
 
 
-/**
+/*******************
 
 Big Screen
 
-**/
+*******************/
 
 @media only screen and (min-width: 1800.2px) {
     .header {
